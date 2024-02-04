@@ -32,6 +32,15 @@
 
       <div class="todo-list">
         <h2>Show Items</h2>
+
+        <% if(locals.toDoItems){ %> <% toDoItems.forEach((item) => { %>
+
+        <p>Title <%= item.title %></p>
+        <p>Note <%= item.note %></p>
+
+        <br />
+
+        <% }) %> <% } %>
       </div>
     </div>
   </body>

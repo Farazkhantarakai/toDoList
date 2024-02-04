@@ -11,15 +11,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 let items = [];
 
 app.get("/", (req, res) => {
-  res.render("toDo.ejs");
+  res.render("toDo.ejs", {
+    toDoItems: items,
+  });
 });
 
 app.post("/postToDo", (req, res) => {
   const data = req.body;
-
   items.push(data);
   console.log(items);
-
   res.redirect("/");
 });
 
