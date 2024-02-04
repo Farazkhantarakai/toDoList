@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File</title>
+
+    <link rel="stylesheet" href="toDo.css" />
+  </head>
+  <body>
+    <div class="outer-box">
+      <div class="todo-box">
+        <h1>TO DO LIST</h1>
+
+        <form action="/postToDo" method="POST" class="form">
+          <input
+            type="text"
+            size="30"
+            placeholder="Enter your Title"
+            name="title"
+          />
+          <textarea
+            name="note"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Enter your note"
+          ></textarea>
+          <input type="submit" value="Add" />
+        </form>
+      </div>
+
+      <div class="todo-list">
+        <h2>Show Items</h2>
+      </div>
+    </div>
+  </body>
+</html>

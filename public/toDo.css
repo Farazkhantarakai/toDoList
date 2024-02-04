@@ -1,0 +1,42 @@
+body {
+  background-image: repeating-conic-gradient(#474bff 0% 25%, #47d3ff 0% 50%);
+  background-position: 0 0, 32px 32px;
+  background-size: 64px 64px;
+  background-color: #47d3ff;
+  box-sizing: border-box;
+}
+
+.outer-box {
+  /* background-color: gainsboro; */
+  width: 900px;
+  height: 400px;
+  opacity: 0.8;
+  position: relative;
+  top: 50px;
+  left: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.outer-box .todo-box {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+
+.todo-list {
+  background-color: antiquewhite;
+  width: 50%;
+  height: 100%;
+  margin-left: 20px;
+  width: 400px;
+  height: 400px;
+}
